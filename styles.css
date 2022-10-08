@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:   black;
+    color: white;
+}
+.main-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+.card{
+    width: 350px;
+    height: 350px;
+    background-color: hsl(216, 39%, 14%);
+    border-radius: 20px;
+    padding: 30px;
+    font-family: 'Overpass', sans-serif;
+    
+}
+.card .icon-star{
+    padding: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+}
+.card h2{
+    padding-top: 30px;
+}
+.card p{
+    color: hsl(217, 12%, 63%);
+    padding-top: 15px;
+}
+.card .options {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    /* padding: 15px; */
+}
+.card .options button{   
+    font-size: 16px;
+    padding: 13px 17px;
+    margin: 30px 30px 0 0;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    border: none;
+    color: hsl(217, 12%, 63%);
+}
+.card .options button:hover{
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+}
+.card .options .clickedButton{
+    background-color: rgb(79, 100, 123);
+}
+
+.card #submit{
+    margin: 25px auto;
+    background-color: hsl(25, 97%, 53%);
+    height: 50px;
+    width: 350px;
+    color: white;
+    font-weight: 400;
+    font-size:medium;
+    position: relative;
+    right: 10px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+
+.card .submit:hover{
+    color: orange;
+    background-color: white;
+}
+
+
+#container2{
+    display: flex;
+    justify-content: center;
+    margin-top: 125px;
+}
+.card2{
+    width: 365px;
+    height: 350px;
+    background-color: hsl(216, 39%, 14%);
+    border-radius: 20px;
+    padding: 30px 25px;
+    font-family: 'Overpass', sans-serif;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card2 .icon{
+    margin-top: 25px;
+}
+.card2 .info {
+    background-color: hsl(213, 19%, 18%);
+    padding: 5px 20px;
+    color: orange;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+.card2 .greet{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.card2 .para{
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    margin-top: 14px;
+}
+
+.attribution{
+    margin: 200px 0 0 0 ;
+    background-color: grey;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+.attribution a{
+    text-decoration: none; 
+}
+
+
+@media (max-width: 376px){
+    .card{
+        width: 300px;
+    }
+    .card .options button{
+        padding: 12px 14px;
+    }
+    .card #submit{
+        width: 300px;
+        position: relative;
+        left: 2px;
+    }
+    .card2{
+        width: 300px;
+        padding: 30px 10px;
+    }
+    .attribution{
+        width: 220px;
+    }
+    
+}
