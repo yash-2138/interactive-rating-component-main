@@ -15,5 +15,9 @@
 .prettierignore
 
 
+<<<<<<< HEAD
 test
 test
+=======
+test changes in test2 branch
+>>>>>>> 41d1ded (test)
